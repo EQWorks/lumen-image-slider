@@ -1,0 +1,14 @@
+{
+  "name": "@eqworks/lumen-image-slider",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "source": "src/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": "git@github.com:EQWorks/lumen-image-slider.git",
+  "author": "EQ Devs <dev@eqworks.com>",
+  "license": "MIT"
+}
