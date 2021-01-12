@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { useTheme } from '@material-ui/core/styles'
 import { CardContent, Typography } from '@material-ui/core'
 
-import StyledCardContainer from '../../styled-card-container'
+import StyledCardContainer from '@eqworks/react-labs/dist/styled-card-container'
 
 const DefaultCard = ({ content }) => {
   const theme = useTheme()
