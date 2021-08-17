@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => {
 
 const TopSection = ({ topSectionContent, customSlider }) => {
   const classes = useStyles()
-  const { title, paragraph, button } = topSectionContent
+  const { title, paragraph, button, onClick } = topSectionContent
   return (
     <Grid container className={classes.textarea}>
       <Grid item>
@@ -36,7 +36,7 @@ const TopSection = ({ topSectionContent, customSlider }) => {
         </Typography>
       </Grid>
       <Grid item className={classes.link}>
-        <Link href={typeof button === 'object' ? button.linkTo : '#'}>
+        <Link onClick={onClick} href={typeof button === 'object' ? button.linkTo : '#'}>
           {typeof button === 'object' ? button.text : button}
         </Link>
         <IconButton
@@ -68,6 +68,7 @@ TopSection.defaultProps = {
     button: {
       text: 'Link',
       linkTo: 'https://console.locus.place',
+      onClick: () => { }
     },
   },
   customSlider: null,
